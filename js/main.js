@@ -11,35 +11,39 @@
   $(function() {
     var $main;
     $main = $("#main");
-    series.map(x)(function() {
+    series.map(function(value) {
       return $main.append("<div class='card'>" + value + "</div>");
     });
-    $main.on("tap", ".card", function() {
+    $main.on("click", ".card", function() {
       var $this;
       $this = $(this);
       defer(function() {
         return $this.addClass("reveal back");
       });
-      $this.animate({
+      $this.css({
         height: window.innerHeight + "px",
-        width: window.innerWidth + "px"
-      }, "slow");
+        width: window.innerWidth + "px",
+        "line-height": window.innerHeight + "px",
+        "font-size": (window.innerHeight / 2) + "px"
+      });
       return false;
     });
-    $main.on("swipe", ".reveal.back", function() {
+    $main.on("click", ".reveal.back", function() {
       var _this = this;
       defer(function() {
         return $(_this).removeClass("back").addClass("front");
       });
       return false;
     });
-    return $main.on("tap", ".reveal.front", function() {
+    return $main.on("click", ".reveal.front", function() {
       var $this;
       $this = $(this);
-      $this.animate({
+      $this.css({
         width: "",
-        height: ""
-      }, "slow");
+        height: "",
+        "font-size": "",
+        "line-height": ""
+      });
       defer(function() {
         return $this.removeClass("reveal back front");
       });

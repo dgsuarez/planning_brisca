@@ -5,23 +5,25 @@ defer = (f) -> setTimeout(f, 0)
 
 $ ->
   $main = $("#main")
-  series.map(x) -> $main.append("<div class='card'>#{value}</div>")
-  $main.on "tap", ".card", ->
+  series.map (value) -> $main.append("<div class='card'>#{value}</div>")
+  $main.on "click", ".card", ->
     $this = $(this)
     defer () -> $this.addClass("reveal back")
-    $this.animate
+    $this.css
       height: window.innerHeight + "px"
-      width: window.innerWidth + "px",
-        "slow"
+      width: window.innerWidth + "px"
+      "line-height": window.innerHeight + "px"
+      "font-size": (window.innerHeight/2) + "px"
     false
-  $main.on "swipe", ".reveal.back", ->
+  $main.on "click", ".reveal.back", ->
     defer () => $(this).removeClass("back").addClass("front")
     false
-  $main.on "tap", ".reveal.front", ->
+  $main.on "click", ".reveal.front", ->
     $this = $(this)
-    $this.animate
+    $this.css
       width: ""
-      height:"",
-        "slow"
+      height:""
+      "font-size": ""
+      "line-height": ""
     defer () -> $this.removeClass("reveal back front")
     false
