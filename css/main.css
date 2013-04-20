@@ -66,7 +66,6 @@ textarea {
    ========================================================================== */
 div.card {
   display: inline-block;
-  font-size: 50px;
   color: white;
   background-color: blue;
   border: 5px solid white;
@@ -74,29 +73,21 @@ div.card {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  min-width: 60px;
-  min-height: 100px;
-  line-height: 100px;
   text-align: center;
 }
 
-
 div.reveal {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  border-radius: 0;
-  border: 0;
-  box-shadow: 0 0 0 0px #000;
+  display: block;
+  top: 10px;
+  left: 50%;
   background-color: blue;
   color: white;
-  font-size: 100px;
-  border-radius: 0;
 }
 
 div.reveal.back {
   text-indent: -30000px;
+  background-image: url('../img/background.png');
 }
 
 
