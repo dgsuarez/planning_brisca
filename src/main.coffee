@@ -1,24 +1,27 @@
 
-series = ['xs','s','m','l','xl','xxl', 'oo', 'coffee']
-
-build_card = (value) ->
-  $("<div class='card'>").text(value)
+series = ['xs','s','m','l','xl','xxl', '∞', '☕']
 
 defer = (f) -> setTimeout(f, 0)
 
 $ ->
   $main = $("#main")
-  series.map(build_card).map (x) -> $main.append(x)
-  $main.on "click", ".card", ->
+  series.map(x) -> $main.append("<div class='card'>#{value}</div>")
+  $main.on "tap", ".card", ->
     $this = $(this)
     defer () -> $this.addClass("reveal back")
-    $this.height(window.innerHeight).width(window.innerWidth)
+    $this.animate
+      height: window.innerHeight + "px"
+      width: window.innerWidth + "px",
+        "slow"
     false
-  $main.on "click", ".reveal.back", ->
+  $main.on "swipe", ".reveal.back", ->
     defer () => $(this).removeClass("back").addClass("front")
     false
-  $main.on "click", ".reveal.front", ->
+  $main.on "tap", ".reveal.front", ->
     $this = $(this)
-    $this.width("").height("")
+    $this.animate
+      width: ""
+      height:"",
+        "slow"
     defer () -> $this.removeClass("reveal back front")
     false

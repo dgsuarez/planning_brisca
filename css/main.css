@@ -72,7 +72,6 @@ div.card {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  animate: width 3s;
 }
 
 
@@ -83,12 +82,13 @@ div.reveal {
   margin: 0;
   background-color: blue;
   color: white;
-  font-size: 500px;
+  font-size: 100px;
   text-align: center;
+  border-radius: 0;
 }
 
 div.reveal.back {
-  font-size: 0;
+  text-indent: -30000px;
 }
 
 
