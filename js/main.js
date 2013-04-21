@@ -2,7 +2,7 @@
 (function() {
   var addStyleForGrid, addStyleForReveal, defer, series;
 
-  series = ['xs', 's', 'm', 'l', 'xl', 'xxl', '∞', 'LP'];
+  series = ['XS', 'S', 'M', 'L', 'XL', 'XXL', '∞', 'LP'];
 
   defer = function(f) {
     return setTimeout(f, 0);
@@ -16,7 +16,7 @@
     style += "height: " + h + "px;";
     style += "width: " + w + "px;";
     style += "line-height: " + h + "px;";
-    style += "font-size: " + (h * 0.5) + "px;";
+    style += "font-size: " + (h * 0.4) + "px;";
     style += "}";
     return $("head").append("<style>" + style + "</style>");
   };
@@ -29,7 +29,7 @@
     style += "min-height: " + h + "px;";
     style += "min-width: " + w + "px;";
     style += "line-height: " + h + "px;";
-    style += "font-size: " + (h * 0.5) + "px;";
+    style += "font-size: " + (h * 0.35) + "px;";
     style += "}";
     return $("head").append("<style>" + style + "</style>");
   };
