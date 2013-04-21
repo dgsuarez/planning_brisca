@@ -10,8 +10,8 @@
 
   addStyleForReveal = function() {
     var h, style, w;
-    w = window.innerWidth * 0.8;
     h = window.innerHeight * 0.9;
+    w = h * 0.75;
     style = "div.card.reveal {";
     style += "height: " + h + "px;";
     style += "width: " + w + "px;";
@@ -27,7 +27,6 @@
     h = w * 1.5;
     style = "div.card {";
     style += "min-height: " + h + "px;";
-    style += "min-width: " + w + "px;";
     style += "line-height: " + h + "px;";
     style += "font-size: " + (h * 0.35) + "px;";
     style += "}";

@@ -64,13 +64,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-div#main {
-  width: 90%;
-  margin: 0 auto;
-}
 
 div.card {
   display: inline-block;
+  min-width: 25%;
   color: white;
   background-color: blue;
   border: 5px solid white;
@@ -82,6 +79,8 @@ div.card {
 }
 
 div.reveal {
+  margin: auto;
+  margin-top: 10px;
   display: block;
   background-color: blue;
   color: white;
