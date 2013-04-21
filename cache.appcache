@@ -1,0 +1,25 @@
+CACHE MANIFEST
+
+#version 1.0 4-21-2013
+
+CACHE:
+
+#images
+
+
+#internal HTML documents
+
+
+#style sheets
+http://dgsuarez.github.io/planning_brisca/css/main.css
+http://dgsuarez.github.io/planning_brisca/css/normalize.css
+
+#style sheet images
+http://dgsuarez.github.io/planning_brisca/img/background.png
+
+#javascript files
+http://www.google-analytics.com/ga.js
+http://dgsuarez.github.io/planning_brisca/js/vendor/modernizr-2.6.2.min.js
+http://dgsuarez.github.io/planning_brisca/js/vendor/zepto.min.js
+http://dgsuarez.github.io/planning_brisca/js/helper.js
+http://dgsuarez.github.io/planning_brisca/js/main.js
