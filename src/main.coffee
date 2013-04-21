@@ -1,5 +1,5 @@
 
-series = ['xs','s','m','l','xl','xxl', '∞', '☕']
+series = ['xs','s','m','l','xl','xxl', '∞', 'LP']
 
 defer = (f) -> setTimeout(f, 0)
 

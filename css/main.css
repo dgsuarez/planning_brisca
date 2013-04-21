@@ -64,6 +64,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+div#main {
+  width: 90%;
+  margin: 0 auto;
+}
+
 div.card {
   display: inline-block;
   color: white;

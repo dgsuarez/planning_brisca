@@ -2,7 +2,7 @@
 (function() {
   var addStyleForGrid, addStyleForReveal, defer, series;
 
-  series = ['xs', 's', 'm', 'l', 'xl', 'xxl', '∞', '☕'];
+  series = ['xs', 's', 'm', 'l', 'xl', 'xxl', '∞', 'LP'];
 
   defer = function(f) {
     return setTimeout(f, 0);
