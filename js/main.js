@@ -12,19 +12,18 @@
     var h, style, w;
     w = window.innerWidth * 0.8;
     h = window.innerHeight * 0.9;
-    style = "div.reveal {";
+    style = "div.card.reveal {";
     style += "height: " + h + "px;";
     style += "width: " + w + "px;";
     style += "line-height: " + h + "px;";
-    style += "margin-left: -" + (w / 2) + "px;";
-    style += "font-size: " + (h * 0.8) + "px;";
+    style += "font-size: " + (h * 0.5) + "px;";
     style += "}";
     return $("head").append("<style>" + style + "</style>");
   };
 
   addStyleForGrid = function() {
     var h, style, w;
-    w = window.innerWidth * 0.25;
+    w = window.innerWidth * 0.20;
     h = w * 1.5;
     style = "div.card {";
     style += "min-height: " + h + "px;";

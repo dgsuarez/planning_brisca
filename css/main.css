@@ -82,10 +82,7 @@ div.card {
 }
 
 div.reveal {
-  position: absolute;
   display: block;
-  top: 10px;
-  left: 50%;
   background-color: blue;
   color: white;
 }
